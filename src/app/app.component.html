@@ -1,20 +1,978 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- Start of Header Wrapper -->
+<div class="header-wrapper">
 
+  <header class="header container fadeInDown ">
+
+      <div class="logo-wrapper">
+          <div class="logo">
+              <h1 class="text-logo">
+                  <a href="index.html" title="Cream">
+                      <!-- PS Bikaner Sweets -->
+                      <img src="assets/images/logo-ps.png">
+                  </a>
+              </h1>
+              <!-- <small class="tag-line">Just another WordPress site</small> -->
+          </div>
+      </div>
+
+
+      <!-- Show quick view cart if WooCommerce is activated and enabled from theme options -->
+      <!-- <div class="mini-cart">
+          <div class="cart-inner">
+              <a href="cart.html" class="cart-link">
+                  <div class="cart-icon">
+                      <i class="fa fa-shopping-cart"></i>
+                      <strong>5</strong>
+                  </div>
+              </a>
+              <div class="nav-dropdown" style="display: none;">
+                  <div class="nav-dropdown-inner">
+                      <div class="cart_list">
+                          <div class="row mini-cart-item">
+                              <div class="col-sm-2">
+                                  <a href="#" class="remove" title="Remove this item"><i class="fa fa-close"></i></a>                                        </div>
+                              <div class="col-sm-7">
+                                  <a class="cart_list_product_title" href="#">Flying Ninja</a>
+                                  <div class="cart_list_product_price">
+                                      <span class="amount">$12.00</span> /</div>
+                                  <div class="cart_list_product_quantity">Quantity: 1</div>                                        </div>
+                              <div class="col-sm-3">
+                                  <a href="#"><img src="assets/images/temp-images/T_5_front-140x140.jpg" alt="Shop Image"></a>
+                              </div>
+                          </div>
+                          <div class="row mini-cart-item">
+                              <div class="col-sm-2">
+                                  <a href="#" class="remove" title="Remove this item"><i class="fa fa-close"></i></a>                                        </div>
+                              <div class="col-sm-7">
+                                  <a class="cart_list_product_title" href="#">Happy Ninja</a><div class="cart_list_product_price">
+                                  <span class="amount">$18.00</span> /</div>
+                                  <div class="cart_list_product_quantity">Quantity: 1</div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <a href="#"><img src="assets/images/temp-images/T_5_front-140x140.jpg" alt="Shop Image"></a>
+                              </div>
+                          </div>
+                          <div class="row mini-cart-item">
+                              <div class="col-sm-2">
+                                  <a href="#" class="remove" title="Remove this item"><i class="fa fa-close"></i></a>                                        </div>
+                              <div class="col-sm-7">
+                                  <a class="cart_list_product_title" href="#">Happy Ninja</a>
+                                  <div class="cart_list_product_price"><span class="amount">$35.00</span> /</div>
+                                  <div class="cart_list_product_quantity">Quantity: 1</div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <a href="#"><img src="assets/images/temp-images/T_5_front-140x140.jpg" alt="Shop Image"></a>                                            </div>
+                          </div>
+                          <div class="row mini-cart-item">
+                              <div class="col-sm-2">
+                                  <a href="#" class="remove" title="Remove this item"><i class="fa fa-close"></i></a>                                        </div>
+                              <div class="col-sm-7">
+                                  <a class="cart_list_product_title" href="#">Ninja Silhouette</a>
+                                  <div class="cart_list_product_price"><span class="amount">$20.00</span> /</div>
+                                  <div class="cart_list_product_quantity">Quantity: 1</div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <a href="#"><img src="assets/images/temp-images/T_5_front-140x140.jpg" alt="Shop Image"></a>                                              </div>
+                          </div>
+                          <div class="row mini-cart-item">
+                              <div class="col-sm-2">
+                                  <a href="#" class="remove" title="Remove this item"><i class="fa fa-close"></i></a>                                        </div>
+                              <div class="col-sm-7">
+                                  <a class="cart_list_product_title" href="#">Ninja Silhouette</a>
+                                  <div class="cart_list_product_price"><span class="amount">$35.00</span> /</div>
+                                  <div class="cart_list_product_quantity">Quantity: 1</div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <a href="#"><img src="assets/images/temp-images/T_5_front-140x140.jpg" alt="Shop Image"></a>                                      </div>
+                          </div>
+                      </div>
+                      <div class="minicart_total_checkout">
+                          Cart Subtotal<span><span class="amount">$120.00</span></span>
+                      </div>
+                      <a href="cart.html" class="button expanded text-uppercase">View Cart</a>
+                      <a href="checkout.html" class="button secondary expanded text-uppercase">Proceed to Checkout</a>
+                  </div>
+              </div>
+          </div>
+
+      </div> -->
+
+
+      <!-- product search form -->
+      <!-- <div class="inspiry-search-wrapper">
+          <form method="get" class="search-form" action="#">
+              <input type="search" class="search-field" placeholder="Search Products..." value="" name="s" title="Search For:">
+              <input type="hidden" name="post_type" value="product">
+          </form>
+          <a class="search-button" href=""><i class="fa fa-search"></i></a>
+      </div> -->
+
+      <!-- Main Menu -->
+      <div class="main-menu-wrapper">
+          <nav id="nav" class="main-menu nav-collapse clearfix">
+              <ul class="clearfix">
+                  <li class="current-menu-item"><a href="index.html">Home</a>
+                  <ul class="sub-menu">
+                      <li><a href="home-2.html">Home &#8211; Possible Variation 2</a></li>
+                      <li><a href="home-3.html">Home &#8211; Possible Variation 3</a></li>
+                  </ul>
+              </li>
+                  <li><a href="our-work.html">Our Work</a>
+                      <ul class="sub-menu">
+                          <li><a href="2-columns-portfolio.html">2 Columns Portfolio</a></li>
+                          <li><a href="3-columns-portfolio.html">3 Columns Portfolio</a></li>
+                          <li><a href="4-columns-portfolio.html">4 Columns Portfolio</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="shop.html">Shop</a>
+                      <ul class="sub-menu">
+                          <li><a href="shop.html">Shop &#8211; Right Sidebar</a></li>
+                          <li><a href="shop-left-sidebar.html">Shop &#8211; Left Sidebar</a></li>
+                          <li><a href="shop-full-width.html">Shop &#8211; Full Width</a></li>
+                          <li><a href="product-detail.html">Product Detail</a></li>
+                          <li><a href="cart.html">Cart</a></li>
+                          <li><a href="checkout.html">Check Out</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Pages</a>
+                      <ul class="sub-menu">
+                          <li><a href="faq.html">FAQs</a></li>
+                          <li><a href="columns.html">Columns</a></li>
+                          <li><a href="shortcodes.html">Shortcodes</a></li>
+                          <li><a href="sample-page.html">Sample Page</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a> </li>
+              </ul>
+          </nav>
+      </div>
+
+
+      <div class="clearfix"></div>
+
+      <!-- product search form for mobile screens -->
+      <!-- <div class="row mobile-search-wrapper">
+          <div class="col-xs-12">
+              <form method="get" class="mobile-search-form" action="#">
+                  <div class="row">
+                      <div class="col-sm-1"></div>
+                      <div class="col-sm-8 field-wrapper">
+                          <input type="search" class="mobile-search-field" placeholder="Search Products..." value="" name="s" title="Search For:">
+                      </div>
+                      <div class="col-sm-2 button-wrapper">
+                          <input type="submit" class="mobile-search-button" value="Search">
+                      </div>
+                      <div class="col-sm-1"></div>
+                  </div>
+                  <input type="hidden" name="post_type" value="product">
+              </form>
+          </div>
+      </div> -->
+
+  </header>
+
+  <div class="header-border-bottom"></div>
+
+</div>
+<!-- End of Header Wrapper -->
+
+<div class="">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide *ngFor="let image of images">
+          <div class="picsum-img-wrapper">
+            <img [src]="image.image" alt="Random first slide" width="100%">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{image.label}}</h3>
+            <p>{{image.desc}}</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+  <!-- <div class="flexslider loading">
+      <ul class="slides">
+          <li>
+              <img src="assets/images/temp-images/slide-1-flex.jpg" alt="Classic Vanilla Cone">
+
+              <div class="slide-description container ">
+
+                  <h2>Classic Vanilla Cone</h2>
+
+                  <div class="separator"></div>
+
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elie sed diam </p>
+
+                  <a href="#any-link-can-go-here">EXPLORE MORE</a>
+
+              </div>
+          </li>
+          <li>
+              <img src="assets/images/temp-images/slide-2-flex.jpg" alt="Amazing Waffle Cone">
+
+              <div class="slide-description container ">
+
+                  <h2>Amazing Waffle Cone</h2>
+
+                  <div class="separator"></div>
+
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elie sed</p>
+
+                  <a href="#any-link-can-go-here">EXPLORE MORE</a>
+
+              </div>
+          </li>
+      </ul>
+  </div> -->
+</div>
+<section class="home-services-section clearfix">
+
+  <div class="curve"></div>
+  <div class="section-top">
+
+      <div class="container">
+
+          <header class="section-header">
+
+              <h2 class="section-title fade-in-up ">Why Cream</h2><p class="fade-in-up ">Features section is flexible to handle any number of features</p>
+          </header>
+
+      </div>
+
+  </div>
+
+
+  <div class="section-bottom">
+
+      <div class="container">
+
+          <div class="row">
+
+              <article class="service col-md-3 col-sm-6 col-xs-12 fade-in-left ">
+                  <div class="img-frame">
+                      <figure>
+                          <a href="#elegant-design" title="Elegant Designs"><img src="assets/images/temp-images/feature-1.png" alt="Elegant Designs"></a>                                    </figure>
+                  </div>
+                  <h3><a href="#elegant-design" title="Elegant Designs">Elegant Designs</a></h3>
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis autem vel eum iriure dolor in hendrerit</p>
+              </article>
+              <article class="service col-md-3 col-sm-6 col-xs-12 fade-in-up ">
+                  <div class="img-frame">
+                      <figure>
+                          <a href="#ice-cream-delicacy" title="Ice Cream Delicacy">
+                              <img src="assets/images/temp-images/feature-2.png" alt="Ice Cream Delicacy"></a>                                    </figure>
+                  </div>
+                  <h3><a href="#ice-cream-delicacy" title="Ice Cream Delicacy">Ice Cream Delicacy</a></h3>
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis autem vel eum iriure dolor in hendrerit</p>
+              </article>
+              <div class="clearfix visible-sm"></div>
+              <article class="service col-md-3 col-sm-6 col-xs-12 fade-in-up ">
+                  <div class="img-frame">
+                      <figure>
+                          <a href="#enriched-taste" title=" Enriched Taste">
+                              <img src="assets/images/temp-images/feature-3.png" alt=" Enriched Taste"></a>                                    </figure>
+                  </div>
+                  <h3><a href="#enriched-taste" title=" Enriched Taste"> Enriched Taste</a></h3><p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis autem vel eum iriure dolor in hendrerit</p>
+              </article>
+              <article class="service col-md-3 col-sm-6 col-xs-12 fade-in-right ">
+                  <div class="img-frame">
+                      <figure>
+                          <a href="#home-delivery" title="Home Delivery"><img src="assets/images/temp-images/feature-4.png" alt="Home Delivery"></a>
+                      </figure>
+                  </div>
+                  <h3><a href="#home-delivery" title="Home Delivery">Home Delivery</a></h3>
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis autem vel eum iriure dolor in hendrerit</p>
+              </article>
+              <div class="clearfix visible-lg"></div>
+              <div class="clearfix visible-md"></div>
+              <div class="clearfix visible-sm"></div>
+          </div>
+      </div>
+  </div>
+
+</section>
+
+<!-- <section class="home-work-section clearfix">
+
+  <div class="container">
+      <header class="section-header">
+          <h2 class="section-title fade-in-up ">Our Work</h2>
+          <p class="fade-in-up ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
+      </header>
+  </div> -->
+
+
+  <!-- <div class="carousel-wrapper">
+      <div class="work-items-carousel fade-in-up ">
+          <div class="work-snippet">
+              <article class="clearfix">
+                  <img src="assets/images/temp-images/potfolio-item-1-570x470.jpg" alt="Various Cupcakes Designs">
+                  <div class="overly">
+                      <h4><a href="#">Various Cupcakes Designs</a></h4>
+                      <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                      <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-1-570x470.jpg"><i class="fa fa-search"></i></a>
+                      <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+                  </div>
+              </article>
+              <article class="clearfix">
+                  <img src="assets/images/temp-images/potfolio-item-2-570x470.jpg" alt="Ice Cream Cake Pops">
+                  <div class="overly">
+                      <h4><a href="#">Ice Cream Cake Pops</a></h4>
+                      <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                      <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-2-570x470.jpg"><i class="fa fa-search"></i></a>
+                      <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+                  </div>
+              </article>
+          </div>
+          <div class="work-snippet">
+              <article class="clearfix">
+                  <img src="assets/images/temp-images/potfolio-item-3-570x470.jpg" alt="Pink Ice Cream Cupcakes">
+                  <div class="overly">
+                      <h4><a href="#">Pink Ice Cream Cupcakes</a></h4>
+                      <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                      <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-3.jpg"><i class="fa fa-search"></i></a>
+                      <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+                  </div>
+              </article>
+              <article class="clearfix">
+                  <img src="assets/images/temp-images/potfolio-item-4-570x470.jpg" alt="Ice Cream Platter">
+                  <div class="overly">
+                      <h4><a href="#">Ice Cream Platter</a></h4>
+                      <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                      <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-4-570x470.jpg"><i class="fa fa-search"></i></a>
+                      <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+                  </div>
+              </article>
+          </div><div class="work-snippet">
+          <article class="clearfix">
+              <img src="assets/images/temp-images/potfolio-item-5-570x470.jpg" alt="Sweet Candies">
+              <div class="overly">
+                  <h4><a href="#">Sweet Candies</a></h4>
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                  <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-5-570x470.jpg"><i class="fa fa-search"></i></a>
+                  <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+              </div>
+          </article>
+          <article class="clearfix">
+              <img src="assets/images/temp-images/potfolio-item-6-570x470.jpg" alt="Ice Cream Cupcakes">
+              <div class="overly">
+                  <h4><a href="#">Ice Cream Cupcakes</a></h4>
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                  <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-6-570x470.jpg"><i class="fa fa-search"></i></a>
+                  <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+              </div>
+          </article>
+      </div><div class="work-snippet">
+          <article class="clearfix">
+              <img src="assets/images/temp-images/potfolio-item-7-570x470.jpg" alt="Chocolate Muffin and Coffee">
+              <div class="overly">
+                  <h4><a href="#">Chocolate Muffin and Coffee</a></h4>
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                  <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-7-570x470.jpg"><i class="fa fa-search"></i></a>
+                  <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+              </div>
+          </article>
+          <article class="clearfix">
+              <img src="assets/images/temp-images/potfolio-item-8-570x470.jpg" alt="Pink Harts Cupcakes">
+              <div class="overly">
+                  <h4><a href="#">Pink Harts Cupcakes</a></h4>
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                  <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-8-570x470.jpg"><i class="fa fa-search"></i></a>
+                  <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+              </div>
+          </article>
+      </div><div class="work-snippet">
+          <article class="clearfix">
+              <img src="assets/images/temp-images/potfolio-item-1-570x470.jpg" alt="Fancy Ice Cream Cupcakes">
+              <div class="overly">
+                  <h4><a href="#">Fancy Ice Cream Cupcakes</a></h4>
+                  <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+                  <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-1-570x470.jpg"><i class="fa fa-search"></i></a>
+                  <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+              </div>
+          </article>
+          <article class="clearfix">
+              <img src="assets/images/temp-images/potfolio-item-2-570x470.jpg" alt="Chocolate and Toffee Apple Muffins">                            <div class="overly">
+              <h4><a href="#">Chocolate and Toffee Apple Muffins</a></h4>
+              <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, Duis&hellip;</p>
+              <a class="preview-icon" data-imagelightbox="lightbox" href="assets/images/temp-images/potfolio-item-2-570x470.jpg"><i class="fa fa-search"></i></a>
+              <a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+          </div>
+          </article>
+      </div>
+      </div>
+  </div> -->
+
+<!-- </section> -->
+<!-- <section class="home-testimonial-section">
+  <div class="container">
+      <header class="section-header">
+          <h2 class="section-title fade-in-up ">Client Testimonials</h2>
+          <p class="fade-in-up ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
+      </header>
+  </div>
+  <div class="testimonial-carousel">
+      <div class="container">
+          <div class="carousel fade-in-right ">
+              <div class="testimonial-content clearfix">
+                  <div class="testimonial-author-photo">
+                      <div class="vertical-line"></div>
+                      <div class="img-frame">
+                          <span><img class="img-circle wp-post-image" src="assets/images/temp-images/testimonial-client-3-150x150.jpg" alt="Image"></span>
+                      </div>
+                  </div>
+                  <blockquote class="testimonial-text">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                      <a class="testimonial-author  fn" target="_blank" href="#">
+                          <cite>Emma Michael</cite>
+                      </a>
+                  </blockquote>
+              </div>
+              <div class="testimonial-content clearfix">
+                  <div class="testimonial-author-photo">
+                      <div class="vertical-line"></div>
+                      <div class="img-frame">
+                          <span><img class="img-circle wp-post-image" src="assets/images/temp-images/testimonial-client-2-150x150.jpg" alt="Image"></span>
+                      </div>
+                  </div>
+                  <blockquote class="testimonial-text">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                      <a class="testimonial-author  fn" target="_blank" href="#">
+                          <cite>Natalie William</cite>
+                      </a>
+                  </blockquote>
+              </div>
+              <div class="testimonial-content clearfix">
+                  <div class="testimonial-author-photo">
+                      <div class="vertical-line"></div>
+                      <div class="img-frame">
+                          <span><img class="img-circle wp-post-image" src="assets/images/temp-images/testimonial-client-3-150x150.jpg" alt="Image"></span>
+                      </div>
+                  </div>
+                  <blockquote class="testimonial-text">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elie sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                      <a class="testimonial-author  fn" target="_blank" href="#">
+                          <cite>Catherine James</cite>
+                      </a>
+                  </blockquote>
+              </div>
+          </div>
+      </div>
+      <div class="testimonial-carousel-nav">
+          <a class="carousel-prev-item prev"></a>
+          <a class="carousel-next-item next"></a>
+      </div>
+  </div>
+</section> -->
+<div class="service-plans">
+
+  <div class="container">
+      <header class="section-header">
+          <h2 class="section-title fade-in-up ">Our Services</h2>
+          <p class="fade-in-up ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
+      </header>
+  </div>
+
+  <div class="container">
+
+      <div class="row">
+          <section class="col-md-4 col-sm-6 col-xs-12 fade-in-left ">
+              <div class="image-container">
+                  <a href="#" title="Lorem ipsum dolor">
+                      <img src="assets/images/temp-images/service-1.jpg" alt="Lorem ipsum dolor"></a>
+              </div>
+              <h3 class="title"><a href="#" title="Lorem ipsum dolor">Lorem ipsum dolor</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud.</p>
+          </section>
+
+          <section class="col-md-4 col-sm-6 col-xs-12 fade-in-up ">
+              <div class="image-container">
+                  <a href="#" title="Lorem ipsum dolor"><img src="assets/images/temp-images/service-2.jpg" alt="Lorem ipsum dolor"></a>
+
+              </div>
+              <h3 class="title"><a href="#" title="Lorem ipsum dolor">Lorem ipsum dolor</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud.</p>
+          </section>
+
+          <div class="clearfix visible-sm"></div>
+          <section class="col-md-4 col-sm-6 col-xs-12 fade-in-right ">
+              <div class="image-container">
+                  <a href="#" title="Lorem ipsum dolor"><img src="assets/images/temp-images/service-3.jpg" alt="Lorem ipsum dolor"></a>
+              </div>
+              <h3 class="title"><a href="#" title="Lorem ipsum dolor">Lorem ipsum dolor</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud.</p>
+          </section>
+
+          <div class="clearfix visible-lg"></div>
+          <div class="clearfix visible-md"></div>
+
+      </div>
+
+  </div>
+
+</div><!-- end of services section -->
+<div class="home-products">
+
+  <div class="container text-center">
+      <div class="row">
+          <h2 class="section-title fade-in-up ">Best Selling Products</h2>
+      </div>
+  </div>
+
+  <div class="container fade-in-up ">
+
+      <div class="woocommerce columns-4">
+
+          <div class="row product-listing">
+
+              <div class="item col-md-3 col-xs-6 first fadeInUp">
+
+                  <article>
+                      <figure>
+                          <a href="shop.html"><img src="assets/images/temp-images/hoodie_1_back-470x470.jpg" alt="Shop Image"></a>
+                          <figcaption><span class="amount">&#36;35.00</span></figcaption>
+                      </figure>
+
+
+
+                      <h4 class="title"><a href="shop.html">Patient Ninja</a></h4>
+
+
+                      <a href="/?add-to-cart=295" rel="nofollow" data-product_id="295" data-product_sku="" data-quantity="1" class="button add_to_cart_button product_type_simple">Add to cart</a>
+                  </article>
+
+              </div>
+
+              <div class="item col-md-3 col-xs-6 fadeInUp">
+
+                  <article>
+
+                      <figure>
+                          <a href="shop.html"><img src="assets/images/temp-images/hoodie_1_front.jpg" alt="Shop Image"></a>
+                          <figcaption><span class="amount">&#36;35.00</span></figcaption>
+                      </figure>
+
+
+
+                      <h4 class="title"><a href="shop.html">Happy Ninja</a></h4>
+
+
+                      <a href="/?add-to-cart=296" rel="nofollow" data-product_id="296" data-product_sku="" data-quantity="1" class="button add_to_cart_button product_type_simple">Add to cart</a>
+                  </article>
+
+              </div>
+
+              <div class="item col-md-3 col-xs-6 fadeInUp">
+
+                  <article>
+
+                      <figure>
+                          <a href="shop.html"><img src="assets/images/temp-images/poster_1_up-300x300.jpg" alt="Shop Image"></a>
+                          <figcaption><del><span class="amount">&#36;15.00</span></del> <ins><span class="amount">&#36;12.00</span></ins></figcaption>
+                      </figure>
+
+                      <span class="onsale">Sale!</span>
+
+                      <h4 class="title"><a href="shop.html">Flying Ninja</a></h4>
+
+
+                      <a href="/?add-to-cart=300" rel="nofollow" data-product_id="300" data-product_sku="" data-quantity="1" class="button add_to_cart_button product_type_simple">Add to cart</a>
+                  </article>
+
+              </div>
+
+              <div class="item col-md-3 col-xs-6 last fadeInUp">
+
+                  <article>
+
+
+                      <figure>
+                          <a href="shop.html"><img src="assets/images/temp-images/poster_2_up-300x300.jpg" alt="Shop Image"></a>
+                          <figcaption><span class="amount">&#36;18.00</span></figcaption>
+                      </figure>
+
+
+
+                      <h4 class="title"><a href="shop.html">Happy Ninja</a></h4>
+
+
+                      <a href="/?add-to-cart=292" rel="nofollow" data-product_id="292" data-product_sku="" data-quantity="1" class="button add_to_cart_button product_type_simple">Add to cart</a>
+                  </article>
+
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+  <!-- end of container -->
+
+</div><!-- end of home-products -->
+
+<section class="home-blog-section clearfix">
+
+  <div class="container">
+
+      <header class="section-header">
+          <h2 class="section-title">Latest News</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod</p>
+      </header>
+      <div id="blog-posts-container">
+
+          <div class="row blog-items">
+
+              <div class="item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+
+                  <article class=" status-publish format-gallery has-post-thumbnail hentry category-recipes post_format-post-format-gallery">
+
+                      <div class="slider-gallery-type-post">
+                          <ul class="slides">
+                              <li>
+                                  <a data-imagelightbox="gallery" href="assets/images/temp-images/blog-post-7.jpg" title="Standard Post Format with Featured Image">
+                                      <img src="assets/images/temp-images/blog-post-7.jpg" alt="Home BLog Img">
+                                  </a>
+                              </li>
+                              <li>
+                                  <a data-imagelightbox="gallery" href="assets/images/temp-images/blog-post-8.jpg" title="Standard Post Format with Featured Image">
+                                      <img src="assets/images/temp-images/blog-post-8.jpg" alt="Home BLog Img">
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="wrapper">
+
+                          <header class="entry-header">
+                              <h3 class="entry-title"><a href="gallery-post-format.html" rel="bookmark">Gallery Post Format</a></h3>
+                              <div class="entry-meta post-meta">
+                      <span class="byline">
+                          <span class="author vcard">By <a href="#" title="Posts by John Doe" rel="author">John Doe</a></span>
+                      </span>
+                      <span class="entry-date date">
+                          on <time class="entry-date" datetime="2014-10-16T14:09:32+00:00">Oct 16, 2014</time>
+                      </span>
+                              </div>
+                          </header>
+
+                          <div class="entry-summary entry-content">
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet&hellip;</p>
+                          </div>
+
+                          <footer class="entry-meta-footer">
+                              <a href="#" class="comments"><i class="fa fa-comments"></i>4</a>
+                          </footer>
+
+                      </div>
+
+                  </article>
+
+              </div>
+              <div class="item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+
+                  <article class="blog-post clearfix format-image has-post-thumbnail hentry category-health tag-biscuit tag-cup tag-table post_format-post-format-image">
+
+                      <figure>
+                          <a href="image-post-format.html" title="Standard Post Format with Featured Image">
+                              <img src="assets/images/temp-images/blog-post-11-770x713.jpg" alt="Home BLog Img">
+                          </a>
+                      </figure>
+                      <div class="wrapper">
+
+                          <header class="entry-header">
+                              <h3 class="entry-title"><a href="image-post-format.html" rel="bookmark">Image Post Format</a></h3>
+                              <div class="entry-meta post-meta">
+                      <span class="byline">
+                          <span class="author vcard">By <a href="#" title="Posts by John Doe" rel="author">John Doe</a></span>
+                      </span>
+                      <span class="entry-date date">
+                          on <time class="entry-date" datetime="2014-10-16T14:08:52+00:00">Oct 16, 2014</time>
+                      </span>
+                              </div>
+                          </header>
+
+                          <div class="entry-summary entry-content">
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet&hellip;</p>
+                          </div>
+
+                          <footer class="entry-meta-footer">
+                              <a href="#" class="comments"><i class="fa fa-comments"></i>0</a>
+                          </footer>
+
+                      </div>
+
+                  </article>
+
+              </div>
+              <div class="item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+
+                  <article class="blog-post clearfix format-quote hentry category-uncategorized post_format-post-format-quote">
+
+                      <div class="wrapper">    <div class="entry-content">
+                          <blockquote class="quote">
+                              <p>
+                                  It's not that some people have willpower and some don't. it's that some people are ready to change and others are not.<cite>James Gordon</cite>            </p>
+                          </blockquote>
+                      </div>
+                          <div class="entry-meta post-meta">
+      <span class="entry-updated">
+          <i class="fa fa-calendar"></i>
+          <time class="updated" datetime="2014-10-16T14:07:59+00:00">Oct 16, 2014</time>
+      </span>
+                              <a class="entry-title hidden" href="#" rel="bookmark">Quote Post Format</a>
+      <span class="entry-author vcard hidden">
+          <a class="url fn" href="#" title="View all posts by John Doe" rel="author">John Doe</a>
+      </span>
+                          </div>
+                      </div>
+                  </article>
+
+              </div>
+              <div class="item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+
+                  <article class="blog-post clearfix format-video hentry category-recipes tag-biscuit tag-cake-recipe tag-cream tag-milk post_format-post-format-video">
+
+                      <div class="video clearfix">
+                          <div class="video-wrapper clearfix">
+                              <!-- <iframe src="//player.vimeo.com/video/82841177?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0"></iframe> -->
+                          </div>
+                      </div>
+                      <div class="wrapper">
+
+                          <header class="entry-header">
+                              <h3 class="entry-title"><a href="video-post-format.html" rel="bookmark">Video Post Format</a></h3>
+                              <div class="entry-meta post-meta">
+                      <span class="byline">
+                          <span class="author vcard">By <a href="#" title="Posts by John Doe" rel="author">John Doe</a></span>
+                      </span>
+                      <span class="entry-date date">
+                          on <time class="entry-date" datetime="2014-10-16T13:56:35+00:00">Oct 16, 2014</time>
+                      </span>
+                              </div>
+                          </header>
+
+                          <div class="entry-summary entry-content">
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet&hellip;</p>
+                          </div>
+
+                          <footer class="entry-meta-footer">
+                              <a href="#" class="comments"><i class="fa fa-comments"></i>0</a>
+                          </footer>
+
+                      </div>
+
+                  </article>
+
+              </div>
+              <div class="item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+
+                  <article class="blog-post clearfix format-link hentry category-recipes post_format-post-format-link">
+
+                      <div class="wrapper"><div class="link clearfix">
+                          <div class="link-container">
+                              <h2 class="entry-title">How to Make Cupcakes</h2>
+                              <a class="link-anchor" href="http://www.wikihow.com/Make-Cupcakes" target="_blank">http://www.wikihow.com/Make-Cupcakes</a>
+                          </div>
+                          <div class="entry-meta hidden">
+                              <time class="updated" datetime="2014-10-16T13:55:44+00:00">Oct 16, 2014</time>
+      <span class="entry-author vcard">
+          <a class="url fn" href="#" title="View all posts by John Doe" rel="author">John Doe</a>
+      </span>
+                          </div>
+                      </div>
+                      </div>
+                  </article>
+
+              </div>
+              <div class="item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+
+                  <article class="blog-post clearfix format-audio hentry category-uncategorized tag-acoustic tag-peace post_format-post-format-audio">
+
+                      <div class="html5-audio-player-container"><!--[if lt IE 9]>
+                          <script>document.createElement('audio');</script><![endif]-->
+                          <audio class="wp-audio-shortcode" id="audio-63-1" preload="none" style="width: 100%; visibility: hidden;" controls="controls"><source type="audio/mpeg" src="http://cream.inspirythemes.biz/wp-content/uploads/2014/10/acoustic-peace.mp3?_=1"><source type="audio/ogg" src="http://cream.inspirythemes.biz/wp-content/uploads/2014/10/acoustic-peace.ogg?_=1"><a href="http://cream.inspirythemes.biz/wp-content/uploads/2014/10/acoustic-peace.mp3">http://cream.inspirythemes.biz/wp-content/uploads/2014/10/acoustic-peace.mp3</a></audio>
+                      </div>
+                      <div class="wrapper">
+
+                          <header class="entry-header">
+                              <h3 class="entry-title"><a href="#" rel="bookmark">Audio Post Format</a></h3>
+                              <div class="entry-meta post-meta">
+                      <span class="byline">
+                          <span class="author vcard">By <a href="#" title="Posts by John Doe" rel="author">John Doe</a></span>
+                      </span>
+                      <span class="entry-date date">
+                          on <time class="entry-date" datetime="2014-10-16T13:47:32+00:00">Oct 16, 2014</time>
+                      </span>
+                              </div>
+                          </header>
+
+                          <div class="entry-summary entry-content">
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet&hellip;</p>
+                          </div>
+
+                          <footer class="entry-meta-footer">
+                              <a href="#" class="comments"><i class="fa fa-comments"></i>0</a>
+                          </footer>
+
+                      </div>
+
+                  </article>
+
+              </div>
+              <div class="item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+
+                  <article class="blog-post clearfix format-image has-post-thumbnail hentry category-recipes post_format-post-format-image">
+
+                      <figure>
+                          <a href="image-post-format.html" title="Standard Post Format with Featured Image">
+                              <img src="assets/images/temp-images/blog-post-1-770x433.jpg" alt="Home BLog Img">
+                          </a>
+                      </figure>
+                      <div class="wrapper">
+
+                          <header class="entry-header">
+                              <h3 class="entry-title"><a href="image-post-format.html" rel="bookmark">Another Image Post Format</a></h3>
+                              <div class="entry-meta post-meta">
+                      <span class="byline">
+                          <span class="author vcard">By <a href="#" title="Posts by John Doe" rel="author">John Doe</a></span>
+                      </span>
+                      <span class="entry-date date">
+                          on <time class="entry-date" datetime="2014-10-16T13:44:07+00:00">Oct 16, 2014</time>
+                      </span>
+                              </div>
+                          </header>
+
+                          <div class="entry-summary entry-content">
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet&hellip;</p>
+                          </div>
+
+                          <footer class="entry-meta-footer">
+                              <a href="#" class="comments"><i class="fa fa-comments"></i>0</a>
+                          </footer>
+
+                      </div>
+
+                  </article>
+
+              </div>
+              <div class="item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+
+                  <article class="blog-post clearfix format-standard hentry category-health">
+
+                      <figure>
+                          <a href="image-post-format.html" title="Standard Post Format with Featured Image">
+                              <img src="assets/images/temp-images/blog-post-9.jpg" alt="Home BLog Img">
+                          </a>
+                      </figure>
+                      <div class="wrapper">
+
+                          <header class="entry-header">
+                              <h3 class="entry-title"><a href="image-post-format.html" rel="bookmark">Standard Post Format with Featured Image</a></h3>
+                              <div class="entry-meta post-meta">
+                      <span class="byline">
+                          <span class="author vcard">By <a href="#" title="Posts by John Doe" rel="author">John Doe</a></span>
+                      </span>
+                      <span class="entry-date date">
+                          on <time class="entry-date" datetime="2014-10-16T07:28:05+00:00">Oct 16, 2014</time>
+                      </span>
+                              </div>
+                          </header>
+
+                          <div class="entry-summary entry-content">
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet&hellip;</p>
+                          </div>
+
+                          <footer class="entry-meta-footer">
+                              <a href="#" class="comments"><i class="fa fa-comments"></i>0</a>
+                          </footer>
+
+                      </div>
+
+                  </article>
+
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+<div class="twitter-feeds">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+              <div class="twitter-icon fade-in-up ">
+                  <i class="fa fa-twitter img-circle"></i>
+              </div>
+              <p class="inline_tweet fade-in-up ">
+                  Both of our <a href="http://twitter.com/search?q=%23RealEstate&src=hash" target="_blank">#RealEstate</a> <a href="http://twitter.com/search?q=%23WordPRess&src=hash" target="_blank">#WordPRess</a> Themes have the latest Visual Composer Plugin 4.11.2.1
+                  <a href="https://t.co/j9ofmliCmS" target="_blank">https://t.co/j9ofmliCmS</a>
+                  <a href="https://t.co/J3iLTWPJ0J" target="_blank">https://t.co/J3iLTWPJ0J</a>
+              </p>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<!-- Start Footer -->
+<footer class="footer">
+
+  <div class="footer-top container">
+
+      <div class="row">
+
+          <div class="col-lg-8 col-xs-12">
+
+              <div class="footer-menu-wrapper fade-in-left ">
+                  <nav class="footer-nav clearfix">
+                      <ul id="menu-footer-menu" class="clearfix">
+                          <li>
+                              <a href="#">Home</a></li>
+                          <li><a href="#">Blog</a>
+                          </li>
+                          <li><a href="#">Shop</a></li>
+                          <li><a href="#">FAQs</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </nav>
+              </div>
+
+              <div class="contact-details clearfix fade-in-left ">
+                  <address>
+                      <i class="fa fa-home"></i>3895 NW 107th Ave, Miami, United States, 465601
+                  </address>
+                  <a class="phone-number" href="tel:18005551234">
+                      <i class="fa fa-mobile"></i>1-800-555-1234</a>
+                  <span class="email">
+                      <i class="fa fa-envelope-o"></i>
+                      <a href="mailto:info@yourwebsite.com">inf&#111;&#64;you&#114;&#119;ebs&#105;&#116;&#101;&#46;&#99;om</a></span>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-xs-12">
+              <div class="social-networks fade-in-right ">
+                  <p class="invitation">Get Social With Us</p>
+                  <ul class="social_networks clearfix">
+                      <li>
+                          <a target="_blank" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                      </li>
+                      <li><a target="_blank" href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                      <li><a target="_blank" href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                      <li><a target="_blank" href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                      <li><a target="_blank" href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+                      <li><a target="_blank" href="#"><i class="fa fa-youtube fa-lg"></i></a></li>
+                      <li><a target="_blank" href="skype:inspirythemes?add"><i class="fa fa-skype fa-lg"></i></a></li>
+                      <li><a target="_blank" href="#rss"><i class="fa fa-rss fa-lg"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer-bottom fadeInUp ">
+      <div class="container">
+          <p class="copyright-text">© Copyright 2015  All Rights Reserved.</p><a href="#top" id="scroll-top"></a>
+      </div>
+  </div>
+
+</footer><!-- End Footer -->

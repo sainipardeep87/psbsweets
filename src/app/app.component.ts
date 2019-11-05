@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  images = [
+    {'image': 'assets/images/temp-images/slide-1-flex.jpg', 'label': 'test label 1', 'desc': 'test descripition'},
+    {'image': 'assets/images/temp-images/slide-2-flex.jpg', 'label': 'test label 2', 'desc': 'test description 2'}
+  ];
 }

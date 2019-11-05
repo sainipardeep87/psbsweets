@@ -23,9 +23,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/custom.css",
+              "src/assets/css/main.css",
+              "src/assets/css/meanmenu.css",
+              "src/assets/css/responsive-tables.css",
+              "src/assets/css/selectric.css",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -72,7 +80,16 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/custom.css",
+              "src/assets/css/main.css",
+              "src/assets/css/meanmenu.css",
+              "src/assets/css/responsive-tables.css",
+              "src/assets/css/selectric.css",
+              "src/assets/css/woocommerce-layout.css",
+              "src/assets/css/woocommerce-smallscren.css",
+              "src/assets/css/woocommerce.css"
             ],
             "scripts": [],
             "assets": [
